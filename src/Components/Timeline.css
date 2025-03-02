@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    }
+    body{
+    background: #000000;
+    justify-items: center;
+    background-size: cover;
+    background-attachment: fixed;
+    }
+    .timelines{
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto;
+    }
+    .containerbox{
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+    animation: movedown 1s linear forwards;
+    opacity: 0;
+    }
+    @keyframes movedown {
+    0%{
+    opacity: 1;
+    transform: translateY(-30px);
+    }
+    100%{
+    opacity: 1;
+    transform: translateY(0px);
+    }
+    }
+    .containerbox:nth-child(1){
+        animation-delay: 0s;
+        }
+    .containerbox:nth-child(2){
+        animation-delay: 1s;
+        }
+        .containerbox:nth-child(3){
+        animation-delay: 2s;
+        }
+        .containerbox:nth-child(4){
+        animation-delay: 3s;
+        }
+        .containerbox:nth-child(5){
+        animation-delay: 4s;
+        }
+        .containerbox:nth-child(6){
+            animation-delay: 5s;
+            }
+            .containerbox:nth-child(7){
+                animation-delay: 6s;
+                }
+                .containerbox:nth-child(8){
+                    animation-delay: 7s;
+                    }
+                    .containerbox:nth-child(9){
+                        animation-delay: 8s;
+                        }
+                        .containerbox:nth-child(10){
+                            animation-delay: 9s;
+                            }
+                            .containerbox:nth-child(11){
+                                animation-delay: 10s;
+                                }
+                                .containerbox:nth-child(12){
+                                    animation-delay: 11s;
+                                    }
+                                    .text-boxglass {
+                                        padding: 20px 30px;
+                                        background: rgba(255, 255, 255, 0.2); /* Transparent white background */
+                                        position: relative;
+                                        border-radius: 6px;
+                                        backdrop-filter: blur(20px); /* Blur effect */
+                                        -webkit-backdrop-filter: blur(20px); /* Blur effect for Safari */
+                                        border: 1px solid rgba(255, 255, 255, 0.3); 
+                                        color: #fff;
+                                        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25); /* Optional: shadow for a more realistic look */
+                                    }
+                                    
+                                    .left-containerbox {
+                                        left: 0;
+                                    }
+                                    
+                                    .right-containerbox {
+                                        left: 50%;
+                                    }
+                                    
+    .containerbox img{
+        position: absolute;
+        width: 40px;
+        border-radius: 50%;
+        right: -20px;
+        top: 32px;
+        z-index: 10;
+        }
+        .right-containerbox img{
+            left: -20px;
+            }
+            
+           
+            
+            .timelines::after {
+                content: '';
+                position: absolute;
+                width: 3px;
+                height: 100%;
+                /* background: repeating-linear-gradient(
+                    to bottom,
+                    rgba(255, 255, 255, 0.8) 0%,
+                    rgba(255, 255, 255, 0.8) 5%,
+                    rgba(255, 255, 255, 0.8) 10%,
+                    transparent 10%,
+                    transparent 20%,
+                    transparent 30%,
+
+                ); */
+                background-color: #000000;
+                top: 0;
+                left: 50%;
+                margin-left: -3px;
+                z-index: -1;
+                animation: moveline 12s linear forwards, glows 1.5s infinite alternate;
+                box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+            }
+            
+            @keyframes moveline {
+                from {
+                    height: 0;
+                }
+                to {
+                    height: 100%;
+                }
+            }
+            
+            @keyframes glows {
+                from {
+                    box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+                }
+                to {
+                    box-shadow: 0 0 25px rgba(255, 255, 255, 1);
+                }
+            }
+            
+    
+            
+            .text-box h2{
+                font-weight: 600;
+                color: white;
+                }
+                .text-box small{
+                display: inline-block;
+                margin-bottom: 15px;
+                }
+                .left-containerbox-arrow{
+                    height: 0;
+                    width: 0;
+                    position: absolute;
+                    top: 28px;
+                    z-index: 1;
+                    border-top: 15px solid transparent;
+                    border-bottom: 15px solid transparent;
+                    border-left: 15px solid #fff;
+                    right: -5px; 
+                    }
+                    .right-containerbox-arrow{
+                        height: 0;
+                        width: 0;
+                        position: absolute;
+                        top: 28px;
+                        z-index: 1;
+                        border-top: 15px solid transparent;
+                        border-bottom: 15px solid transparent;
+                        border-right: 15px solid #fff;
+                        left: -5px;
+                        }
+                        @media screen and (max-width: 600px) {
+                            .timeline{
+                            margin: 50px auto;
+                            }
+                            .timeline::after{
+                            left: 31px;
+                            }
+                            .containerbox{
+                            width: 100%;
+                            padding-left: 80px;
+                            padding-right: 25px;
+                            }
+                            .text-box{
+                                font-size: 13px;
+                                }
+                                .text-box small{
+                                margin-bottom: 10px;
+                                }
+                                .right-containerbox{
+                                left: 0;
+                                }
+                                .left-containerbox img, .right-containerbox img{
+                                    left: 10px;
+                                    }
+                                    .left-containerbox-arrow, right-containerbox-arrow{
+                                    border-right: 15px solid #fff;
+                                    border-left: 0;
+                                    left: -15px;
+                                    }       
+                                    }
+                             

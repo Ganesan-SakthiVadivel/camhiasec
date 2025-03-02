@@ -1,0 +1,58 @@
+.teams-sections {
+    text-align: center;
+    padding: 60px;
+    margin-top: 4%;
+  }
+  
+  .teams-grids {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    gap: 20px;
+    margin-top: 30px;
+}
+  .teams-container-texts{
+    color: aliceblue;
+    display:grid;
+  }
+  .teams-cards {
+    background: rgba(255, 255, 255, 0.3); /* White background with 30% opacity */
+    backdrop-filter: blur(5px); /* Blur effect for the glassy effect */
+    -webkit-backdrop-filter: blur(5px); /* Safari compatibility */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.18); /* Slight border for a glassy outline */
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 1.5s ease-in-out;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .portrait-teams-image {
+    width: 200px;
+    height: 300px;
+    border-radius: 1%;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto 10px;
+  }
+  .landscape-teams-image {
+    width: 350px;
+    height: 200px;
+    border-radius: 1%;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto 10px;
+  }
+  @media (max-width: 1024px) {
+    .teams-grids {
+      grid-template-columns: repeat(1, 1fr); /* Two columns on medium screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .teams-grids {
+      grid-template-columns: repeat(1, 1fr); /* One column on small screens */
+    }
+  }
+  

@@ -1,0 +1,108 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000000000000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.5s;
+
+}
+
+header.sticky {
+    background: black;
+    padding: 10px 100px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    opacity: 0.9;
+}
+
+header .logo {
+    color: #fff;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+header.sticky .logo {
+    color: #fff;
+     animation: glow 1s ease-in-out infinite alternate;
+}
+
+header .navigation {
+    position: relative;
+    display: flex;
+}
+
+header .navigation li {
+    list-style: none;
+    margin-left: 30px;
+}
+
+header .navigation li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+}
+
+header.sticky .navigation li a {
+    color: whitesmoke;
+}
+
+header .navigation li a:hover {
+    color: black;
+    font-weight: 300;
+}
+header.sticky .navigation li a:hover{
+    color: #058ee3;
+}
+@media screen and (max-width: 991px) {
+    header, header.sticky {
+        padding: 10px 20px;
+    }
+    header .navigation {
+        display: none;
+    }
+    .menuToggle {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(../img/menu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        cursor: pointer;
+    }
+    .menuToggle.active {
+        background: url(../img/close.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        cursor: pointer;
+    }
+    header.sticky .menuToggle {
+        filter: invert(0);
+    }
+    header .navigation.active {
+        width: 100%;
+        height: calc(100% - 65px);
+        position: fixed;
+        top: 62px;
+        left: 0;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background: #fff;
+        display: flex;
+    }
+    header .navigation li {
+        margin-left: 0;
+    }
+    header .navigation li a {
+        color: #111;
+        font-size: 1.6em;
+    }
+    .banner .content h2 {
+        font-size: 3.9em;
+    }
+}
