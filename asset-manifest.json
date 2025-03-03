@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/camhiasec/static/css/main.21d19342.css",
-    "main.js": "/camhiasec/static/js/main.cf34a79e.js",
+    "main.css": "/camhiasec/static/css/main.ea60db2f.css",
+    "main.js": "/camhiasec/static/js/main.9b68dcf1.js",
     "static/js/919.0716376c.chunk.js": "/camhiasec/static/js/919.0716376c.chunk.js",
     "static/media/sarvesh.jpg": "/camhiasec/static/media/sarvesh.b7904cce6155a6acff8b.jpg",
     "static/media/camhieventflyer9.jpg": "/camhiasec/static/media/camhieventflyer9.95c55da69488f7b41371.jpg",
@@ -59,12 +59,12 @@
     "static/media/jayadurga.jpg": "/camhiasec/static/media/jayadurga.88547064532ccdbef1f2.jpg",
     "static/media/srirams.jpg": "/camhiasec/static/media/srirams.0b9f71d33aec350e6756.jpg",
     "index.html": "/camhiasec/index.html",
-    "main.21d19342.css.map": "/camhiasec/static/css/main.21d19342.css.map",
-    "main.cf34a79e.js.map": "/camhiasec/static/js/main.cf34a79e.js.map",
+    "main.ea60db2f.css.map": "/camhiasec/static/css/main.ea60db2f.css.map",
+    "main.9b68dcf1.js.map": "/camhiasec/static/js/main.9b68dcf1.js.map",
     "919.0716376c.chunk.js.map": "/camhiasec/static/js/919.0716376c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.21d19342.css",
-    "static/js/main.cf34a79e.js"
+    "static/css/main.ea60db2f.css",
+    "static/js/main.9b68dcf1.js"
   ]
 }
