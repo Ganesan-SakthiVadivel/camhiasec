@@ -8,13 +8,12 @@ import Timeline from './Components/Timeline';
 import Events from './Components/Events';
 import { Forms } from './Components/Forms';
 import Contact from './Components/Contact';
-import BackgroundWrapper from './Components/dummy';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 function App() {
   return (
     <div className="App">
       <Router>
-      <BackgroundWrapper>
+      
       <Navbar></Navbar>
       <Routes>
         <Route path='/' element={<Home></Home>} ></Route>
@@ -25,7 +24,7 @@ function App() {
         <Route path='/contact' element={<Contact/>}></Route>
 
       </Routes>
-      </BackgroundWrapper>
+      
       </Router>
       
     
