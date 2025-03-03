@@ -8,7 +8,7 @@ import { motion } from 'framer-motion';
 const Home = () => {
   // Refs for each section
   const aboutRef = useRef(null);
-  const pathRef = useRef(null);
+  
   const benefitsRef = useRef(null);
   const domainsRef = useRef(null);
   

@@ -1,6 +1,6 @@
 {
   "name": "camhi",
-  "homepage": "https://ganesan-sakthivadivel.github.io/camhi-page/",
+  "homepage": "https://ganesan-sakthivadivel.github.io/camhiasec",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -34,7 +34,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-  "deploy": "gh-pages -b gh-pages -d build"
+    "deploy": "gh-pages -b gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -66,5 +66,4 @@
     "webpack-cli": "^6.0.1",
     "webpack-dev-server": "^5.2.0"
   }
- 
 }
