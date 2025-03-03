@@ -175,7 +175,7 @@ const Home = () => {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.5 }}
           >
-            <h1 className="text-blue-900 text-center text-sm sm:text-base md:text-lg lg:text-5xl font-bold tracking-wider">
+            <h1 className="text-blue-900 text-center text-1xl sm:text-base md:text-2xl lg:text-5xl font-bold tracking-wider">
               <span className="text-white animate-pulse">C</span>omputer 
               <span className="text-white animate-pulse"> A</span>ided 
               <span className="text-white animate-pulse"> M</span>achine 

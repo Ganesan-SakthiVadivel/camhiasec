@@ -11,7 +11,7 @@ const Navbar = () => {
   }, [location]);
 
   return (
-    <nav className="fixed top-2 left-1/2 transform -translate-x-1/2 z-50 bg-gradient-to-r from-indigo-50/70 to-purple-50/50 backdrop-blur-md bg-opacity-90 shadow-lg rounded-full px-6 py-1 flex items-center no-underline">
+    <nav className="fixed top-2 left-1/2 transform -translate-x-1/2 z-50 bg-gradient-to-r from-indigo-50/70 to-purple-50/50 backdrop-blur-md bg-opacity-90 shadow-lg rounded-full px-5 py-1 flex items-center no-underline">
       {/* Logo Button with pulse effect */}
       <div className="relative mr-6">
         <span className="absolute inset-0 rounded-full animate-pulse opacity-90"></span>

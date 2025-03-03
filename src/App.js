@@ -9,25 +9,21 @@ import Events from './Components/Events';
 import { Forms } from './Components/Forms';
 import Contact from './Components/Contact';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
 function App() {
   return (
     <div className="App">
-      <Router>
-      
-      <Navbar></Navbar>
-      <Routes>
-        <Route path='/' element={<Home></Home>} ></Route>
-        <Route path='/officers' element={<Members></Members>} ></Route>
-        <Route path='/timeline' element={<Timeline></Timeline>}></Route>
-        <Route path='/events' element={<Events></Events>}></Route>
-        <Route path='/joincamhi' element={<Forms/>}></Route>
-        <Route path='/contact' element={<Contact/>}></Route>
-
-      </Routes>
-      
+      <Router basename="/camhi-page">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/officers" element={<Members />} />
+          <Route path="/timeline" element={<Timeline />} />
+          <Route path="/events" element={<Events />} />
+          <Route path="/joincamhi" element={<Forms />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
       </Router>
-      
-    
     </div>
   );
 }
