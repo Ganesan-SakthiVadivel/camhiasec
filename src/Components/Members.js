@@ -26,11 +26,12 @@ import gresshma from '../img/CAMHI-Alumini/greeshma.jpg';
 import hithesh from '../img/CAMHI-Alumini/hitesh .jpg';
 import neha from '../img/CAMHI-Alumini/neha.jpg';
 import agilan from '../img/CAMHI-Alumini/agilan.jpg';
+import sakthi from '../img/Camhi-member/sakthi.jpg';
 
 const teamMembers = [
   { name: 'Lokesh Kumar KM', role: 'CHAIRMAN', photo: lokesh, socials: { Linkedin: '#', Email: '#' } },
   { name: 'Ashwin B', role: 'SECRETARY', photo: ashwin, socials: { Linkedin: '#', Email: '#' } },
-  { name: 'Sakthi Saran R', role: 'TREASURER', photo: lokesh, socials: { Linkedin: '#', Email: '#' } },
+  { name: 'Sakthi Saran R', role: 'TREASURER', photo: sakthi, socials: { Linkedin: '#', Email: '#' } },
   { name: 'Thanya Y', role: 'INDUSTRY RELATION Head', photo: thanya, socials: { Linkedin: '#', Email: '#' } },
   { name: 'Samsthidhaa Sridharan', role: 'EVENT ORGANIZER', photo: samsitha, socials: { Linkedin: '#', Email: '#' } },
   { name: 'Ganesan SV', role: 'Media Team Head', photo: ganesan, socials: { Linkedin: '#', Email: '#' } },

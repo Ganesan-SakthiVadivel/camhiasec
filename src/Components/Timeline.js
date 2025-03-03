@@ -170,14 +170,14 @@ const Timeline = () => {
   ];
 
   return (
-    <div className="bg-black/90 min-h-screen flex justify-center w-full py-16 flex-col items-center overflow-hidden pt-32">
-      <h1 className="text-4xl md:text-5xl font-bold text-white mb-8 text-center">
+    <div className="bg-black/90 min-h-screen flex justify-center w-full py-12 md:py-16 flex-col items-center overflow-hidden pt-20 md:pt-32 px-4">
+      <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6 md:mb-8 text-center">
         <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">
           CAMHI Timeline
         </span>
       </h1>
       
-      <div ref={timelineRef} className="relative w-full max-w-6xl px-4">
+      <div ref={timelineRef} className="relative w-full max-w-6xl">
         {/* Center line with animated pulse effect */}
         <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-blue-600 via-purple-600 to-pink-600 z-0">
           <div className="absolute top-0 left-0 right-0 bottom-0 bg-gradient-to-b from-blue-400 via-purple-500 to-pink-500 animate-pulse"></div>
@@ -188,36 +188,35 @@ const Timeline = () => {
           {events.map((event, index) => (
             <div 
               key={index} 
-              className={`timeline-item opacity-0 translate-y-16 transition-all duration-700 flex items-center mb-16 ${
-                index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'
-              } relative`}
+              className={`timeline-item opacity-0 translate-y-16 transition-all duration-700 flex items-center mb-12 sm:mb-16 relative
+                ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`}
             >
               {/* Date circle */}
-              <div className="absolute left-1/2 transform -translate-x-1/2 w-12 h-12 rounded-full bg-gradient-to-br from-white to-gray-400 flex items-center justify-center shadow-lg shadow-purple-500/30 z-10 border-2 border-purple-800">
-                <div className="w-8 h-8 rounded-full bg-black flex items-center justify-center">
-                  <span className="text-xs font-bold text-white">{event.date.split(" ")[0]}</span>
+              <div className="absolute left-1/2 transform -translate-x-1/2 w-8 sm:w-10 md:w-12 h-8 sm:h-10 md:h-12 rounded-full bg-gradient-to-br from-white to-gray-400 flex items-center justify-center shadow-lg shadow-purple-500/30 z-10 border-2 border-purple-800">
+                <div className="w-5 sm:w-6 md:w-8 h-5 sm:h-6 md:h-8 rounded-full bg-black flex items-center justify-center">
+                  <span className="text-[10px] sm:text-xs font-bold text-white">{event.date.split(" ")[0]}</span>
                 </div>
               </div>
               
               {/* Content side */}
-              <div className={`w-5/12 ${index % 2 === 0 ? 'pr-12' : 'pl-12'}`}>
-                <div className={`bg-gradient-to-br ${event.color} rounded-2xl p-px shadow-lg transform hover:scale-105 transition-transform duration-300`}>
-                  <div className="bg-black bg-opacity-80 backdrop-blur-md rounded-2xl p-6 h-full">
-                    <div className="flex items-center mb-3">
-                      <img src={Camhilogo} alt="CAMHI" className="w-8 h-8 mr-3" />
-                      <h3 className="text-xl font-semibold text-white">{event.title}</h3>
+              <div className={`w-5/12 ${index % 2 === 0 ? 'pr-4 sm:pr-8 md:pr-12' : 'pl-4 sm:pl-8 md:pl-12'}`}>
+                <div className={`bg-gradient-to-br ${event.color} rounded-xl md:rounded-2xl p-px shadow-lg transform hover:scale-105 transition-transform duration-300`}>
+                  <div className="bg-black bg-opacity-80 backdrop-blur-md rounded-xl md:rounded-2xl p-3 sm:p-4 md:p-6 h-full">
+                    <div className="flex items-center mb-2 md:mb-3">
+                      <img src={Camhilogo} alt="CAMHI" className="w-5 sm:w-6 md:w-8 h-5 sm:h-6 md:h-8 mr-2 sm:mr-3" />
+                      <h3 className="text-base sm:text-lg md:text-xl font-semibold text-white">{event.title}</h3>
                     </div>
-                    <p className="text-gray-300 text-sm leading-relaxed">{event.description}</p>
+                    <p className="text-gray-300 text-xs md:text-sm leading-relaxed">{event.description}</p>
                     
                     {/* Interactive elements */}
-                    <div className="mt-4 flex justify-between items-center">
-                      <span className="text-xs font-semibold bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400">
+                    <div className="mt-2 sm:mt-3 md:mt-4 flex justify-between items-center">
+                      <span className="text-[10px] sm:text-xs font-semibold bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400">
                         {event.date}
                       </span>
-                      <div className="flex space-x-2">
-                        <span className="w-2 h-2 rounded-full bg-white animate-ping"></span>
-                        <span className="w-2 h-2 rounded-full bg-white animate-ping" style={{ animationDelay: '0.3s' }}></span>
-                        <span className="w-2 h-2 rounded-full bg-white animate-ping" style={{ animationDelay: '0.6s' }}></span>
+                      <div className="flex space-x-1 sm:space-x-2">
+                        <span className="w-1.5 md:w-2 h-1.5 md:h-2 rounded-full bg-white animate-ping"></span>
+                        <span className="w-1.5 md:w-2 h-1.5 md:h-2 rounded-full bg-white animate-ping" style={{ animationDelay: '0.3s' }}></span>
+                        <span className="w-1.5 md:w-2 h-1.5 md:h-2 rounded-full bg-white animate-ping" style={{ animationDelay: '0.6s' }}></span>
                       </div>
                     </div>
                   </div>
@@ -232,9 +231,9 @@ const Timeline = () => {
       </div>
       
       {/* Bottom decorative element */}
-      <div className="w-16 h-16 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 mt-8 relative">
+      <div className="w-10 sm:w-12 md:w-16 h-10 sm:h-12 md:h-16 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 mt-6 md:mt-8 relative">
         <div className="absolute inset-1 rounded-full bg-black flex items-center justify-center">
-          <div className="w-10 h-10 rounded-full bg-gradient-to-br from-blue-400 to-purple-600 animate-ping opacity-75"></div>
+          <div className="w-6 sm:w-8 md:w-10 h-6 sm:h-8 md:h-10 rounded-full bg-gradient-to-br from-blue-400 to-purple-600 animate-ping opacity-75"></div>
         </div>
       </div>
     </div>
